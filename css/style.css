@@ -1,0 +1,30 @@
+nav{
+font-family: Georgia, 'Times New Roman', Times, serif;
+display: flex;
+justify-content: space-around;
+background-color: #2E8A99;
+}
+footer{
+font-family: Georgia, 'Times New Roman', Times, serif;
+display: flex;
+justify-content: space-around;
+background-color: #2E8A99;
+}
+form{
+    background-color: #1F6E8C;
+    color: rgb(2, 2, 22);
+}
+main{
+    margin: auto;
+    background-color: #0E2954;
+}
+section{
+    margin: auto;
+    height: 400px;
+    width: 1200px;
+    background-color: #84A7A1;
+
+}
+legend{
+    color: white;
+}
