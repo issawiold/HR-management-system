@@ -40,7 +40,7 @@ avmark=markSalary/mark;
 let totalNum=getarr1.length
 let totalSalary=adminSalary+financeSalary+develSalary+markSalary
 let avtotal=totalSalary/totalNum
-return ['Administration',admin,adminSalary,avadmin,"Marketing",mark,markSalary,avmark,"Finance",finance,financeSalary,avfin,"Development",devel,develSalary,avdevel,totalNum,totalSalary,avtotal]
+return ['Administration',admin,avadmin,adminSalary,"Marketing",mark,avmark, markSalary,"Finance",finance,avfin, financeSalary,"Development",devel,avdevel, develSalary,'Total',totalNum,avtotal, totalSalary]
 }
 function tableRender(arr){
     tr=document.querySelectorAll("tr")
@@ -49,10 +49,12 @@ function tableRender(arr){
         let k=0
         while(k<3){
         tr[i].appendChild(document.createElement("td"))
+        k++
     }}
-    tableELement=document.querySelectorAll("td")
-    for (let i = 0; i < empty1.length; i++) {
-        tableELement[i].innerText=arr[i]        
+    tableELements=document.querySelectorAll("td")
+    console.log(tableELements)
+    for (let i = 0; i < tableELements.length; i++) {
+        tableELements[i].innerText=arr[i]        
     }
 }
 tableRender(getDataFromLocal())
